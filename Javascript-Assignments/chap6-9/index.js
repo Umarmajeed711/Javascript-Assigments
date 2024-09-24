@@ -67,31 +67,24 @@ function submit3() {
 
 // Table Generator Function
 
-function submit4() {
-  let table = document.querySelector("#table").value;
-  document.querySelector("#tableno").innerText = table;
+// function tableGenerator(){
 
-  let tabler1 = table * 1;
-  document.querySelector("#tabler1").innerText = tabler1;
-  let tabler2 = table * 2;
-  document.querySelector("#tabler2").innerText = tabler2;
-  let tabler3 = table * 3;
-  document.querySelector("#tabler3").innerText = tabler3;
-  let tabler4 = table * 4;
-  document.querySelector("#tabler4").innerText = tabler4;
-  let tabler5 = table * 5;
-  document.querySelector("#tabler5").innerText = tabler5;
-  let tabler6 = table * 6;
-  document.querySelector("#tabler6").innerText = tabler6;
-  let tabler7 = table * 7;
-  document.querySelector("#tabler7").innerText = tabler7;
-  let tabler8 = table * 8;
-  document.querySelector("#tabler8").innerText = tabler8;
-  let tabler9 = table * 9;
-  document.querySelector("#tabler9").innerText = tabler9;
-  let tabler10 = table * 10;
-  document.querySelector("#tabler10").innerText = tabler10;
-}
+//   let numberTable = Number(document.querySelector("#table").value);
+
+//   let tableRow = "";
+
+//   for(let i=1; i <= 10; i++){
+//       tableRow += `<tr>
+//           <td>${numberTable}</td>
+//           <td>x</td>
+//           <td>${i}</td>
+//           <td>=</td>
+//           <td>${numberTable * i}</td>
+//           </tr>`
+//   }
+
+//   document.querySelector("#gettable").innerHTML = tableRow
+// }
 
 // Percentage Calculator Fucntion
 

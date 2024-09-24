@@ -9,10 +9,20 @@
       rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      td, th{
+          border: 1px solid black;
+          padding: 14px;
+      }
+  </style>
   </head>
   <body>
-    <div class="container mt-5">
 
+    <div class="container d-flex justify-content-center bg-warning mt-3">
+      <h1>Assigments chapter 6 to 9</h1>
+    </div>
+
+    <div class="container mt-5">
      <div class="d-flex justify-content-center"><h1>Hello! "<span id="hello"></span>"</h1>
      </div>
       <!-- first Expression -->
@@ -104,34 +114,42 @@
 
     
     
-
-
-
-
     <!-- Table Generator  -->
-
-
 
     <div class="container mt-5">
       <h2>Table Generator</h2>
       <input type="number" id="table" placeholder="enter table no" />
-      <button class="btn btn-primary" onclick="submit4()">submit</button>
+      <button class="btn btn-primary" onclick="tableGenerator()">submit</button>
     </div>
 
 
-     <div class="container mt-3 " style="word-spacing: 1.25em;">
-      <p > <span id="tableno">5</span> *  1 = <span id="tabler1">5</span></p>
-      <p > <span id="tableno">5</span> *  2 = <span id="tabler2">10</span></p>
-      <p > <span id="tableno">5</span> *  3 = <span id="tabler3">15</span></p>
-      <p > <span id="tableno">5</span> * 4 = <span id="tabler4">20</span></p>
-      <p > <span id="tableno">5</span> * 5 = <span id="tabler5">25</span></p>
-      <p > <span id="tableno">5</span> * 6 = <span id="tabler6">30</span></p>
-      <p > <span id="tableno">5</span> * 7 = <span id="tabler7">35</span></p>
-      <p > <span id="tableno">5</span> * 8 = <span id="tabler8">40</span></p>
-      <p > <span id="tableno">5</span> * 9 = <span id="tabler9">45</span></p>
-      <p > <span id="tableno">5</span> * 10 = <span id="tabler10">50</span></p>
+     <div class="container d-flex flex-wrap flex-column">
+     <p id="gettable"></p>
      </div>
 
+    <script>
+      // Table Generator Function
+
+function tableGenerator(){
+
+let numberTable = Number(document.querySelector("#table").value);
+
+let tableRow = "";
+
+for(let i=1; i <= 10; i++){
+    tableRow += `<tr>
+        <td>${numberTable}</td>
+        <td>x</td>
+        <td>${i}</td>
+        <td>=</td>
+        <td>${numberTable * i}</td>
+        </tr>`
+}
+
+document.querySelector("#gettable").innerHTML = tableRow
+}
+
+</script>
 
      <!-- <script>
   function submit4(){
@@ -171,7 +189,7 @@
 
 <!-- ///   Percentage Calculator -->
 
-<h1 class="container">Percentage Calculator</h1>
+<h1 class="container d-flex justify-content-center mt-3">Percentage Calculator</h1>
 <div class="container mt-5 d-flex justify-content-center flex-wrap">
   <div class="border border-2 p-5">
     <h3>Math:</h3>
@@ -346,7 +364,7 @@
         </li>
         <li class="page-item active"><a class="page-link" href="#">6</a></li>
         <li class="page-item">
-          <a class="page-link" href="../chap10-12/index.html">Next</a>
+          <a class="page-link" href="../chap9-11/index.html">Next</a>
         </li>
       </ul>
     </div>
